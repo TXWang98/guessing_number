@@ -64,7 +64,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 const half_correct = cnt_correct - cnt_complete_correct;
                 feedback = `"${cnt_complete_correct} correct in both number and position, ${half_correct} only in number"`;
             }
-            this.displayFeedback(feedback);
+            if (this.guessright == false){
+                this.displayFeedback(feedback);
+            }
         }
 
         displayFeedback(feedback) {
