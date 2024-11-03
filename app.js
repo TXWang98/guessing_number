@@ -90,7 +90,7 @@ generator = new ContentGenerator(content)
 generator.render('app'); // 调用实例的方法，渲染内容到id为'app'的元素中
 const guessing_interaction = document.getElementById('guessing')
 console.log("loading guessing")
-/*
+
 while (generator.guessright == false){
     generator.dynamicid += 1
     const inputstr = "inputguessing" + String(generator.dynamicid)
@@ -107,7 +107,7 @@ while (generator.guessright == false){
     guessing_interaction.appendChild(newDiv.firstElementChild)
     document.getElementById(sumbitstr).addEventListener('click', generator.calling_prompt)
 }
-*/
+
 
 
 
