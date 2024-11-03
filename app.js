@@ -2,6 +2,7 @@ class ContentGenerator {
     constructor(content) {
         this.content = content; // 保存内容到类实例中
         this.random_number = this.generateUniqueFourDigitNumber()
+        console.log("嘻嘻，number is", this.random_number)
         this.guessright = false;
         this.dynamicid = 0
     }
