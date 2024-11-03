@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    const content = `<p>Try try this!</p>`;
+    const content = `<p>Proudly presented by 咪咪大王!</p>`;
     const generator = new ContentGenerator(content);
     generator.render('app');
 
