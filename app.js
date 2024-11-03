@@ -64,9 +64,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const half_correct = cnt_correct - cnt_complete_correct;
                 feedback = `"${cnt_complete_correct} correct in both number and position, ${half_correct} only in number"`;
             }
-            if (this.guessright == false){
-                this.displayFeedback(feedback);
-            }
+            this.displayFeedback(feedback);
+            
         }
 
         displayFeedback(feedback) {
@@ -78,7 +77,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             `;
             guessing_interaction.appendChild(newDiv.firstElementChild);
-            this.createInputField();
+            if (this.guessright == true){
+                let currentUrl = window.location.href;
+                window.location.href = newUrl;
+            }else{
+                this.createInputField();
+            }
         }
 
         createInputField() {
