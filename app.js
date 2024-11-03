@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
         constructor(content) {
             this.content = content;
             this.random_number = this.generateUniqueFourDigitNumber();
-            console.log("hahaha, the correct number is", this.random.number)
+            console.log("hahaha, the correct number is", this.random_number)
             this.guessright = false;
             this.dynamicid = 0;
         }
