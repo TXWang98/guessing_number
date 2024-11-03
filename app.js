@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
             guessing_interaction.appendChild(newDiv.firstElementChild);
             if (this.guessright == true){
                 let currentUrl = window.location.href;
-                window.location.href = newUrl;
+                window.location.href = currentUrl;
             }else{
                 this.createInputField();
             }
